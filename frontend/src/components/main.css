@@ -1,0 +1,172 @@
+.mainpg{
+    background-color: rgb(102 151 181 / 54%);
+    background-image:url(../assets/Bg-img-dekstop.jpg);
+    background-size:cover;
+    height: 92vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.mainpg h1{
+font-size: 60px;
+font-family: "Edu VIC WA NT Beginner", cursive;
+}
+.mainpg h2{
+    font-size: 40px;
+    margin: 20px;
+    font-family: "Edu VIC WA NT Beginner", cursive;
+
+}
+.mainpg p{
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+
+}
+.mainpg input{
+    margin: 40px;
+    height: 35px;
+    width: 25vw;
+    padding: 5px;
+    font-size: 25px;
+    border: 0;
+    border-bottom: 3px solid black;
+    background: none;
+    outline: 0;
+}
+.mainpg button{
+    height: 30px;
+    width: 100px;
+    border-radius: 20px;
+    font-family: "Poppins", sans-serif;
+}
+.container button{
+  height: 5vh;
+  width: 20vw;
+  border-radius: 20px;
+  font-family: "Poppins", sans-serif;
+  font-size: 23px;
+  font-weight: bold;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  background-color:#ffffff3d;
+  align-items: center;
+  height: 75vh;
+  width: 37vw;
+  justify-content: center;
+  border-radius: 30px;
+  backdrop-filter: blur(10px);
+    border: 2px solid black;
+}
+.chat-room {
+    border: 2px solid black;
+    padding: 10px;
+    height: 60vh;
+    overflow-y: scroll;
+    width: 80vw;
+    background-color: white;
+  }
+  
+  .message {
+    margin-bottom: 10px;
+  }
+  
+  .message strong {
+    color: #333;
+  }
+  .msg{
+    background-color: #6d636324;
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    border-radius: 20px;
+    padding: 7px;
+    width: fit-content;
+    margin: 7px;
+}  
+.send-msg input{
+width: 70vw;
+}
+.icon{
+  height: 20vh;
+  width: 20vh;
+  border-radius: 50%;
+background-image: url(https://cdn-icons-png.flaticon.com/512/5987/5987424.png);
+background-size:contain;
+}
+.show-link{
+  display: flex;
+}
+.hide-link{
+  display: none;
+}
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 50%;
+  width: 250px;
+  background-color: black;
+  animation: sidebar 0.1s ease-in-out;
+  z-index: 1;
+}
+
+.sidebar li {
+  padding:20px;
+  text-align: center;
+  list-style: none;
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+
+}
+
+.sidebar li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+.cross{
+ display: flex;
+ justify-content: end;
+}
+@keyframes sidebar{
+  from{
+    width: 0px;
+  }
+  to{
+    width: 250px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .mainpg{
+    background-image: url(../assets/Bg-img-phone.jpg);
+    background-size: cover;
+  }
+ .mainpg input{
+  width: 70vw;
+ }
+ .mainpg h1{
+  font-size: 32px;
+ }
+ .container{
+  width: 85vw;
+ }
+ .container button{
+  width: 65vw;
+ }
+ .show-link{
+  display: none;
+}
+.hide-link{
+  display: flex;
+  color: white;
+  font-size: 25px;
+}
+.send-msg{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+}
